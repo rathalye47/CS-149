@@ -1,0 +1,442 @@
+    1  sudo apt install gcc
+    2  sudo apt install make
+    3  gcc --version
+    4  pwd
+    5  cd ~
+    6  cd Desktop/
+    7  ls -latr ; mkdir ws1 ; cd ws1
+    8  wget -0 out.pdf https://tinyurl.com/yy94jltt
+    9  wget -O out.pdf https://tinyurl.com/yy94jltt
+   10  ls -latr
+   11  history > worksheet1.log
+   12  whoami
+   13  sudo adduser cs149 vboxsf
+   14  sudo reboot
+   15  whoami
+   16  sudo adduser cs149 vboxsf
+   17  sudo reboot
+   18  wget https://github.com/torvalds/linux/archive/master.zip
+   19  unzip master.zip
+   20  cd linux-master
+   21  pwd
+   22  alias l='ls -latr'
+   23  l
+   24  find . -name mem.c
+   25  find . -name mem.c | xargs head
+   26  find . -name mem.c | xargs grep 86
+   27  cd ..
+   28  history > worksheet3.log
+   29  head worksheet3.log
+   30  touch test1.c
+   31  vi test1.c
+   32  gcc -o test1 test1.c
+   33  vi test1.c
+   34  nano test1.c
+   35  gcc -o test1 test1.c
+   36  wget http://www.apuebook.com/src.3e.tar.gz
+   37  gunzip src.3e.tar.gz
+   38  tar xvf src.3e.tar
+   39  cd apue.3e
+   40  cd proc
+   41  make all
+   42  ./fork1
+   43  ./fork2
+   44  gcc -o test1 test1.c
+   45  cd ws6
+   46  cd ..
+   47  gcc -o test1 test1.c
+   48  cd apue.3e
+   49  cd proc
+   50  ./test1
+   51  ./p1
+   52  ./test1
+   53  nano test1.c
+   54  ./test1
+   55  nano test1.c
+   56  ./test1
+   57  make all
+   58  ./test1
+   59  nano test1.c
+   60  make all
+   61  ./test1
+   62  nano test1.c
+   63  ./test1
+   64  make all
+   65  ./test1
+   66  nano test1.c
+   67  make all
+   68  ./test1
+   69  nano test1.c
+   70  make all
+   71  ./test1
+   72  wget http://www.apuebook.com/src.3e.tar.gz
+   73  gunzip src.3e.tar.gz
+   74  tar xvf src.3e.tar
+   75  cd apue.3e
+   76  cd proc
+   77  make all
+   78  ./fork1
+   79  ./fork2
+   80  pwd
+   81  pstree
+   82  ps -a -f -x
+   83  ps -a -f -x | more
+   84  top
+   85  man kill
+   86  echo $?
+   87  echo $$
+   88  history > worksheet4.log
+   89  tail worksheet4.log
+   90  cd ~/Desktop/
+   91  mkdir ws7
+   92  cd ws7
+   93  ls | wc
+   94  ls | sort
+   95  ls | sort | wc
+   96  ls -latr /bin/  > a.out
+   97  cat a.out | more
+   98  strace ls
+   99  du -sh .
+  100  df -i
+  101  history > worksheet7.log
+  102  wget http://www.apuebook.com/src.3e.tar.gz
+  103  gunzip src.3e.tar.gz
+  104  tar xvf src.3e.tar
+  105  cd fileio
+  106  cd apue.3e
+  107  cd fileio
+  108  cat mycat.c
+  109  nano mycat.c
+  110  make all
+  111  ./mycat
+  112  nano mycat.c
+  113  make all
+  114  ./mycat
+  115  mycat
+  116  ./mycat
+  117  nano mycat.c
+  118  make all
+  119  ./mycat
+  120  nano mycat.c
+  121  ./mycat hello
+  122  nano mycat.c
+  123  make all
+  124  ./mycat
+  125  ./mycat 4
+  126  nano mycat.c
+  127  make all
+  128  ./mycat
+  129  nano mycat.c
+  130  make all
+  131  nano mycat.c
+  132  make all
+  133  nano mycat.c
+  134  make all
+  135  ./mycat
+  136  nano mycat.c
+  137  make all
+  138  ./mycat
+  139  nano mycat.c
+  140  make all
+  141  ./mycat
+  142  nano mycat.c
+  143  make all
+  144  nano mycat.c
+  145  gcc  -ansi  -I../include   -DLINUX  -D_GNU_SOURCE  -Wall   -o mycat mycat.c  -L../lib -lapue
+  146  ./mycat
+  147  nano mycat.c
+  148  make all
+  149  ./mycat
+  150  ls
+  151  nano mycat.c
+  152  make all
+  153  nano mycat.c
+  154  make all
+  155  ./mycat.c
+  156  ./mycat
+  157  nano mycat.c
+  158  make all
+  159  nano mycat.c
+  160  make all
+  161  ./mycat
+  162  nano mycat.c
+  163  make all
+  164  ./mycat
+  165  nano mycat.c
+  166  cd ..
+  167  cd signals
+  168  nano sigusr.c
+  169  make all
+  170  ./sigusr &
+  171  kill -SIGUSR1 22679
+  172  kill -SIGUSR2 22679
+  173  kill -SIGCONT 22679
+  174  kill -9 22679
+  175  history > worksheet9.log
+  176  cat worksheet9.log
+  177  ps aux
+  178  cd assignment5
+  179  ps
+  180  pwd
+  181  cd ..
+  182  cd assignment5
+  183  cd ws6
+  184  cd ..
+  185  cd assignment5
+  186  pwd
+  187  cd 
+  188  cd assignment5
+  189  pwd
+  190  ls
+  191  cd ..
+  192  ls
+  193  cd ..
+  194  ls
+  195  cd /home/cs149
+  196  cd Desktop
+  197  cd assignment5
+  198  touch proc_manager.c
+  199  gcc -o proc_manager proc_manager.c -Wall -Werror
+  200  ./proc_manager cmdfile.txt
+  201  gcc -o proc_manager proc_manager.c -Wall -Werror
+  202  ./proc_manager cmdfile.txt
+  203  cat 23397.out
+  204  cat 23397.err
+  205  cat 23398.out
+  206  cat 23399.err
+  207  cat 23400.out
+  208  cat 23400.err
+  209  cat 23401.out
+  210  cat 23401.err
+  211  cat 23402.err
+  212  cat 23402.out
+  213  cat 23478.out
+  214  cat 23482.err
+  215  cat 23478.err
+  216  cat 23476.err
+  217  cat 23476.out
+  218  gcc -o proc_manager proc_manager.c -Wall -Werror
+  219  ./proc_manager cmdfile.txt
+  220  gcc -o proc_manager proc_manager.c -Wall -Werror
+  221  ./proc_manager cmdfile.txt
+  222  gcc -o proc_manager proc_manager.c -Wall -Werror
+  223  ./proc_manager cmdfile.txt
+  224  gcc -o proc_manager proc_manager.c -Wall -Werror
+  225  ./proc_manager cmdfile.txt
+  226  cat 25233.out
+  227  cat 25230.out
+  228  cat 25230.err
+  229  cat 25231.out
+  230  cat 25231.err
+  231  cat 25232.out
+  232  cat 25232.err
+  233  cat 25233.out
+  234  cat 25233.err
+  235  cat 25234.out
+  236  cat 25234.err
+  237  cat 25235.out
+  238  cat 25235.err
+  239  cat 25263.out
+  240  cat 25263.err
+  241  cat 25268.out
+  242  cat 25268.err
+  243  cat 25269.out
+  244  cat 25269.err
+  245  gcc -o proc_manager proc_manager.c -Wall -Werror
+  246  ./proc_manager cmdfile.txt
+  247  gcc -o proc_manager proc_manager.c -Wall -Werror
+  248  ./proc_manager cmdfile.txt
+  249  gcc -o proc_manager proc_manager.c -Wall -Werror
+  250  ./proc_manager cmdfile.txt
+  251  gcc -o proc_manager proc_manager.c -Wall -Werror
+  252  ./proc_manager cmdfile.txt
+  253  gcc -o proc_manager proc_manager.c -Wall -Werror
+  254  ./proc_manager cmdfile.txt
+  255  touch cmdfile.txt
+  256  ps aux | grep proc_manager
+  257  pkill sleep
+  258  kill -9 23397
+  259  ps aux | grep proc_manager
+  260  kill -9 23396
+  261  pkill sleep
+  262  ps aux | grep proc_manager
+  263  kill -9 23646
+  264  kill -9 23716
+  265  ps aux | grep proc_manager
+  266  kill -9 23809
+  267  killall -9 sleep
+  268  cat 24156.out
+  269  cat 24156.err
+  270  cat 24157.out
+  271  cat 24157.err
+  272  cat 24158.out
+  273  cat 24158.err
+  274  cat 24159.out
+  275  cat 24159.err
+  276  cat 24160.out
+  277  cat 24160.err
+  278  cat 24161.out
+  279  cat 24161.err
+  280  cat 24193.out
+  281  cat 24193.err
+  282  cat 24196.out
+  283  cat 24196.err
+  284  cat 24200.out
+  285  cat 24200.err
+  286  killall -9 sleep
+  287  kill -9 sleep
+  288  killall -9 sleep
+  289  ps aux | grep proc_manager
+  290  killall -9 sleep
+  291  cd Desktop
+  292  cd assignment5
+  293  gcc -o proc_manager proc_manager.c -Wall -Werror
+  294  ./proc_manager cmdfile.txt
+  295  gcc -o proc_manager proc_manager.c -Wall -Werror
+  296  ./proc_manager cmdfile.txt
+  297  cd Desktop
+  298  cd assignment5
+  299  killall -9 sleep
+  300  ps aux | grep proc_manager
+  301  killall -9 sleep
+  302  cd Desktop
+  303  cd assignment5
+  304  killall -9 sleep
+  305  ps aux | grep proc_manager
+  306  killall -9 27079
+  307  killall -9 sleep
+  308  ps aux | grep proc_manager
+  309  kill -9 27264
+  310  cd Desktop
+  311  cd assignment5
+  312  gcc -o proc_manager proc_manager.c -Wall -Werror
+  313  ./proc_manager cmdfile.txt
+  314  gcc -o proc_manager proc_manager.c -Wall -Werror
+  315  ./proc_manager cmdfile.txt
+  316  gcc -o proc_manager proc_manager.c -Wall -Werror
+  317  ./proc_manager cmdfile.txt
+  318  gcc -o proc_manager proc_manager.c -Wall -Werror
+  319  ./proc_manager cmdfile.txt
+  320  gcc -o proc_manager proc_manager.c -Wall -Werror
+  321  ./proc_manager cmdfile.txt
+  322  gcc -o proc_manager proc_manager.c -Wall -Werror
+  323  ./proc_manager cmdfile.txt
+  324  gcc -o proc_manager proc_manager.c -Wall -Werror
+  325  ./proc_manager cmdfile.txt
+  326  killall -9 sleep
+  327  cd Desktop
+  328  cd assignment
+  329  cd assignment5
+  330  gcc -o proc_manager proc_manager.c -Wall -Werror
+  331  ./proc_manager cmdfile.txt
+  332  cd Desktop
+  333  cd assignment5
+  334  killall -9 sleep
+  335  cd Desktop
+  336  cd assignment5
+  337  gcc -o proc_manager proc_manager.c -Wall -Werror
+  338  ./proc_manager cmdfile.txt
+  339  gcc -o proc_manager proc_manager.c -Wall -Werror
+  340  ./proc_manager cmdfile.txt
+  341  cd Desktop
+  342  cd assignment5
+  343  killall -9 sleep
+  344  cd Desktop
+  345  cd assignment5
+  346  gcc -o proc_manager proc_manager.c -Wall -Werror
+  347  ./proc_manager cmdfile.txt
+  348  cd Desktop
+  349  cd assignment5
+  350  killall -9 sleep
+  351  cd Desktop
+  352  cd assignment5
+  353  gcc -o proc_manager proc_manager.c -Wall -Werror
+  354  ./proc_manager cmdfile.txt
+  355  cd Desktop
+  356  cd assignment5
+  357  killall -9 sleep
+  358  cd Desktop
+  359  cd assignment5
+  360  gcc -o proc_manager proc_manager.c -Wall -Werror
+  361  ./proc_manager cmdfile.txt
+  362  gcc -o proc_manager proc_manager.c -Wall -Werror
+  363  ./proc_manager cmdfile.txt
+  364  cd Desktop
+  365  cd assignment5
+  366  killall -9 sleep
+  367  cd Desktop
+  368  cd assignment5
+  369  gcc -o proc_manager proc_manager.c -Wall -Werror
+  370  ./proc_manager cmdfile.txt
+  371  gcc -o proc_manager proc_manager.c -Wall -Werror
+  372  ./proc_manager cmdfile.txt
+  373  gcc -o proc_manager proc_manager.c -Wall -Werror
+  374  ./proc_manager cmdfile.txt
+  375  cd Desktop
+  376  cd assignment5
+  377  killall -9 sleep
+  378  cd Desktop
+  379  cd assignment5
+  380  gcc -o proc_manager proc_manager.c -Wall -Werror
+  381  ./proc_manager cmdfile.txt
+  382  cd Desktop
+  383  cd assignment5
+  384  killall -9 sleep
+  385  cd Desktop
+  386  cd assignment5
+  387  gcc -o proc_manager proc_manager.c -Wall -Werror
+  388  ./proc_manager cmdfile.txt
+  389  cd Desktop
+  390  cd assignment5
+  391  killall -9 sleep
+  392  killall sleep
+  393  cd Desktop
+  394  cd assignment5
+  395  gcc -o proc_manager proc_manager.c -Wall -Werror
+  396  ./proc_manager cmdfile.txt
+  397  cd Desktop
+  398  cd assignment5
+  399  killall -9 sleep
+  400  cd Desktop
+  401  cd assignment5
+  402  killall -9 sleep
+  403  cd Desktop
+  404  cd assignment5
+  405  gcc -o proc_manager proc_manager.c -Wall -Werror
+  406  ./proc_manager cmdfile.txt
+  407  gcc -o proc_manager proc_manager.c -Wall -Werror
+  408  ./proc_manager cmdfile.txt
+  409  gcc -o proc_manager proc_manager.c -Wall -Werror
+  410  ./proc_manager cmdfile.txt
+  411  gcc -o proc_manager proc_manager.c -Wall -Werror
+  412  ./proc_manager cmdfile.txt
+  413  gcc -o proc_manager proc_manager.c -Wall -Werror
+  414  ./proc_manager cmdfile.txt
+  415  gcc -o proc_manager proc_manager.c -Wall -Werror
+  416  ./proc_manager cmdfile.txt
+  417  gcc -o proc_manager proc_manager.c -Wall -Werror
+  418  ./proc_manager cmdfile.txt
+  419  gcc -o proc_manager proc_manager.c -Wall -Werror
+  420  ./proc_manager cmdfile.txt
+  421  gcc -o proc_manager proc_manager.c -Wall -Werror
+  422  ./proc_manager cmdfile.txt
+  423  gcc -o proc_manager proc_manager.c -Wall -Werror
+  424  ./proc_manager cmdfile.txt
+  425  gcc -o proc_manager proc_manager.c -Wall -Werror
+  426  ./proc_manager cmdfile.txt
+  427  wget http://www.apuebook.com/src.3e.tar.gz
+  428  gunzip src.3e.tar.gz
+  429  tar xvf src.3e.tar
+  430  cd apue.3e
+  431  rsync -arv filedir/ filedir1/
+  432  cp -r filedir/ filedir2/
+  433  ls -latr filedir1/
+  434  ls -latr filedir2/
+  435  cd filedir1
+  436  ls -lart | tail
+  437  cat /proc/meminfo
+  438  cat /sys/block/sda/queue/hw_sector_size 
+  439  df
+  440  df /home
+  441  ls -i
+  442  history > worksheet13.log

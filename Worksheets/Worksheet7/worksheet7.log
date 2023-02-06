@@ -1,0 +1,101 @@
+    1  sudo apt install gcc
+    2  sudo apt install make
+    3  gcc --version
+    4  pwd
+    5  cd ~
+    6  cd Desktop/
+    7  ls -latr ; mkdir ws1 ; cd ws1
+    8  wget -0 out.pdf https://tinyurl.com/yy94jltt
+    9  wget -O out.pdf https://tinyurl.com/yy94jltt
+   10  ls -latr
+   11  history > worksheet1.log
+   12  whoami
+   13  sudo adduser cs149 vboxsf
+   14  sudo reboot
+   15  whoami
+   16  sudo adduser cs149 vboxsf
+   17  sudo reboot
+   18  wget https://github.com/torvalds/linux/archive/master.zip
+   19  unzip master.zip
+   20  cd linux-master
+   21  pwd
+   22  alias l='ls -latr'
+   23  l
+   24  find . -name mem.c
+   25  find . -name mem.c | xargs head
+   26  find . -name mem.c | xargs grep 86
+   27  cd ..
+   28  history > worksheet3.log
+   29  head worksheet3.log
+   30  touch test1.c
+   31  vi test1.c
+   32  gcc -o test1 test1.c
+   33  vi test1.c
+   34  nano test1.c
+   35  gcc -o test1 test1.c
+   36  wget http://www.apuebook.com/src.3e.tar.gz
+   37  gunzip src.3e.tar.gz
+   38  tar xvf src.3e.tar
+   39  cd apue.3e
+   40  cd proc
+   41  make all
+   42  ./fork1
+   43  ./fork2
+   44  gcc -o test1 test1.c
+   45  cd ws6
+   46  cd ..
+   47  gcc -o test1 test1.c
+   48  cd apue.3e
+   49  cd proc
+   50  ./test1
+   51  ./p1
+   52  ./test1
+   53  nano test1.c
+   54  ./test1
+   55  nano test1.c
+   56  ./test1
+   57  make all
+   58  ./test1
+   59  nano test1.c
+   60  make all
+   61  ./test1
+   62  nano test1.c
+   63  ./test1
+   64  make all
+   65  ./test1
+   66  nano test1.c
+   67  make all
+   68  ./test1
+   69  nano test1.c
+   70  make all
+   71  ./test1
+   72  wget http://www.apuebook.com/src.3e.tar.gz
+   73  gunzip src.3e.tar.gz
+   74  tar xvf src.3e.tar
+   75  cd apue.3e
+   76  cd proc
+   77  make all
+   78  ./fork1
+   79  ./fork2
+   80  pwd
+   81  pstree
+   82  ps -a -f -x
+   83  ps -a -f -x | more
+   84  top
+   85  man kill
+   86  echo $?
+   87  echo $$
+   88  history > worksheet4.log
+   89  tail worksheet4.log
+   90  cd ~/Desktop/
+   91  mkdir ws7
+   92  cd ws7
+   93  ls | wc
+   94  ls | sort
+   95  ls | sort | wc
+   96  ls -latr /bin/  > a.out
+   97  cat a.out | more
+   98  strace ls
+   99  du -sh .
+  100  df -i
+  101  history > worksheet7.log

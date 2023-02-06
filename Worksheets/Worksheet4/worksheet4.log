@@ -1,0 +1,46 @@
+    1  sudo apt install gcc
+    2  sudo apt install make
+    3  gcc --version
+    4  pwd
+    5  cd ~
+    6  cd Desktop/
+    7  ls -latr ; mkdir ws1 ; cd ws1
+    8  wget -0 out.pdf https://tinyurl.com/yy94jltt
+    9  wget -O out.pdf https://tinyurl.com/yy94jltt
+   10  ls -latr
+   11  history > worksheet1.log
+   12  whoami
+   13  sudo adduser cs149 vboxsf
+   14  sudo reboot
+   15  whoami
+   16  sudo adduser cs149 vboxsf
+   17  sudo reboot
+   18  wget https://github.com/torvalds/linux/archive/master.zip
+   19  unzip master.zip
+   20  cd linux-master
+   21  pwd
+   22  alias l='ls -latr'
+   23  l
+   24  find . -name mem.c
+   25  find . -name mem.c | xargs head
+   26  find . -name mem.c | xargs grep 86
+   27  cd ..
+   28  history > worksheet3.log
+   29  head worksheet3.log
+   30  wget http://www.apuebook.com/src.3e.tar.gz
+   31  gunzip src.3e.tar.gz
+   32  tar xvf src.3e.tar
+   33  cd apue.3e
+   34  cd proc
+   35  make all
+   36  ./fork1
+   37  ./fork2
+   38  pwd
+   39  pstree
+   40  ps -a -f -x
+   41  ps -a -f -x | more
+   42  top
+   43  man kill
+   44  echo $?
+   45  echo $$
+   46  history > worksheet4.log

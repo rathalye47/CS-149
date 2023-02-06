@@ -1,0 +1,175 @@
+    1  sudo apt install gcc
+    2  sudo apt install make
+    3  gcc --version
+    4  pwd
+    5  cd ~
+    6  cd Desktop/
+    7  ls -latr ; mkdir ws1 ; cd ws1
+    8  wget -0 out.pdf https://tinyurl.com/yy94jltt
+    9  wget -O out.pdf https://tinyurl.com/yy94jltt
+   10  ls -latr
+   11  history > worksheet1.log
+   12  whoami
+   13  sudo adduser cs149 vboxsf
+   14  sudo reboot
+   15  whoami
+   16  sudo adduser cs149 vboxsf
+   17  sudo reboot
+   18  wget https://github.com/torvalds/linux/archive/master.zip
+   19  unzip master.zip
+   20  cd linux-master
+   21  pwd
+   22  alias l='ls -latr'
+   23  l
+   24  find . -name mem.c
+   25  find . -name mem.c | xargs head
+   26  find . -name mem.c | xargs grep 86
+   27  cd ..
+   28  history > worksheet3.log
+   29  head worksheet3.log
+   30  touch test1.c
+   31  vi test1.c
+   32  gcc -o test1 test1.c
+   33  vi test1.c
+   34  nano test1.c
+   35  gcc -o test1 test1.c
+   36  wget http://www.apuebook.com/src.3e.tar.gz
+   37  gunzip src.3e.tar.gz
+   38  tar xvf src.3e.tar
+   39  cd apue.3e
+   40  cd proc
+   41  make all
+   42  ./fork1
+   43  ./fork2
+   44  gcc -o test1 test1.c
+   45  cd ws6
+   46  cd ..
+   47  gcc -o test1 test1.c
+   48  cd apue.3e
+   49  cd proc
+   50  ./test1
+   51  ./p1
+   52  ./test1
+   53  nano test1.c
+   54  ./test1
+   55  nano test1.c
+   56  ./test1
+   57  make all
+   58  ./test1
+   59  nano test1.c
+   60  make all
+   61  ./test1
+   62  nano test1.c
+   63  ./test1
+   64  make all
+   65  ./test1
+   66  nano test1.c
+   67  make all
+   68  ./test1
+   69  nano test1.c
+   70  make all
+   71  ./test1
+   72  wget http://www.apuebook.com/src.3e.tar.gz
+   73  gunzip src.3e.tar.gz
+   74  tar xvf src.3e.tar
+   75  cd apue.3e
+   76  cd proc
+   77  make all
+   78  ./fork1
+   79  ./fork2
+   80  pwd
+   81  pstree
+   82  ps -a -f -x
+   83  ps -a -f -x | more
+   84  top
+   85  man kill
+   86  echo $?
+   87  echo $$
+   88  history > worksheet4.log
+   89  tail worksheet4.log
+   90  cd ~/Desktop/
+   91  mkdir ws7
+   92  cd ws7
+   93  ls | wc
+   94  ls | sort
+   95  ls | sort | wc
+   96  ls -latr /bin/  > a.out
+   97  cat a.out | more
+   98  strace ls
+   99  du -sh .
+  100  df -i
+  101  history > worksheet7.log
+  102  wget http://www.apuebook.com/src.3e.tar.gz
+  103  gunzip src.3e.tar.gz
+  104  tar xvf src.3e.tar
+  105  cd fileio
+  106  cd apue.3e
+  107  cd fileio
+  108  cat mycat.c
+  109  nano mycat.c
+  110  make all
+  111  ./mycat
+  112  nano mycat.c
+  113  make all
+  114  ./mycat
+  115  mycat
+  116  ./mycat
+  117  nano mycat.c
+  118  make all
+  119  ./mycat
+  120  nano mycat.c
+  121  ./mycat hello
+  122  nano mycat.c
+  123  make all
+  124  ./mycat
+  125  ./mycat 4
+  126  nano mycat.c
+  127  make all
+  128  ./mycat
+  129  nano mycat.c
+  130  make all
+  131  nano mycat.c
+  132  make all
+  133  nano mycat.c
+  134  make all
+  135  ./mycat
+  136  nano mycat.c
+  137  make all
+  138  ./mycat
+  139  nano mycat.c
+  140  make all
+  141  ./mycat
+  142  nano mycat.c
+  143  make all
+  144  nano mycat.c
+  145  gcc  -ansi  -I../include   -DLINUX  -D_GNU_SOURCE  -Wall   -o mycat mycat.c  -L../lib -lapue
+  146  ./mycat
+  147  nano mycat.c
+  148  make all
+  149  ./mycat
+  150  ls
+  151  nano mycat.c
+  152  make all
+  153  nano mycat.c
+  154  make all
+  155  ./mycat.c
+  156  ./mycat
+  157  nano mycat.c
+  158  make all
+  159  nano mycat.c
+  160  make all
+  161  ./mycat
+  162  nano mycat.c
+  163  make all
+  164  ./mycat
+  165  nano mycat.c
+  166  cd ..
+  167  cd signals
+  168  nano sigusr.c
+  169  make all
+  170  ./sigusr &
+  171  kill -SIGUSR1 22679
+  172  kill -SIGUSR2 22679
+  173  kill -SIGCONT 22679
+  174  kill -9 22679
+  175  history > worksheet9.log

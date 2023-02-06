@@ -1,0 +1,11 @@
+    1  sudo apt install gcc
+    2  sudo apt install make
+    3  gcc --version
+    4  pwd
+    5  cd ~
+    6  cd Desktop/
+    7  ls -latr ; mkdir ws1 ; cd ws1
+    8  wget -0 out.pdf https://tinyurl.com/yy94jltt
+    9  wget -O out.pdf https://tinyurl.com/yy94jltt
+   10  ls -latr
+   11  history > worksheet1.log

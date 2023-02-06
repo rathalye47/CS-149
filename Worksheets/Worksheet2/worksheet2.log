@@ -1,0 +1,25 @@
+    1  sudo apt install gcc
+    2  sudo apt install make
+    3  gcc --version
+    4  pwd
+    5  cd ~
+    6  cd Desktop/
+    7  ls -latr ; mkdir ws1 ; cd ws1
+    8  wget -0 out.pdf https://tinyurl.com/yy94jltt
+    9  wget -O out.pdf https://tinyurl.com/yy94jltt
+   10  ls -latr
+   11  history > worksheet1.log
+   12  whoami
+   13  sudo adduser cs149 vboxsf
+   14  sudo reboot
+   15  date
+   16  pwd
+   17  cd ~
+   18  cd Desktop/
+   19  ls -latr  ; mkdir ws2  ; cd ws2
+   20  ls -latr
+   21  echo $?
+   22  man ps
+   23  ps aux
+   24  top
+   25  history > worksheet2.log
